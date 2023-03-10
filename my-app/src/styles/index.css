@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 15rem;
+  padding-top: 8vh;
+  padding-bottom: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 56.25em) {
+  main {
+    margin-top: 17rem;
+  }
+}
+@media (max-width: 37.5em) {
+  main {
+    margin-top: 15rem;
+  }
+}
+
+.gloabalClass {
+  box-sizing: border-box;
+}
+
+.hiddenNone {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(177, 173, 173);
+}
+.header__izquierda {
+  color: red;
+}/*# sourceMappingURL=index.css.map */
