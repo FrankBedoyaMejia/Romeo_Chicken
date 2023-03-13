@@ -8,6 +8,7 @@
 
 html {
   font-family: "Roboto", sans-serif;
+  background-color: black;
 }
 body {
   box-sizing: border-box;
@@ -42,8 +43,26 @@ main {
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(177, 173, 173);
+  background-color: rgb(255, 255, 255);
+  align-items: center;
 }
 .header__izquierda {
-  color: red;
+  display: flex;
+  border: red solid 5px;
+  align-items: center;
+}
+.header__izquierda img {
+  height: 10rem;
+}
+.header__derecha {
+  border: blue solid 1px;
+  width: 10%;
+  margin-right: 10rem;
+  font-size: 1.7rem;
+}
+.header__derecha ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
 }/*# sourceMappingURL=index.css.map */
