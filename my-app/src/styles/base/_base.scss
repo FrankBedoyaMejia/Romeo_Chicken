@@ -8,23 +8,20 @@
 
 html {
   //This defines what one rem is (that's why it's more a global definition than font style related)
- // 1 rem= 10px; 10px/16px= 62.5%
+  // 1 rem= 10px; 10px/16px= 62.5%
   font-family: "Roboto", sans-serif;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
 
   @include respond(tab-land) {
     // 1rem= 9px; 9px/16px= 56.25%
-   
   }
 
   @include respond(tab-port) {
     // 1rem= 8px; 8px/16px= 50%
-    
   }
 
   @include respond(big-desktop) {
     // 1rem= 12px; 12px/16px= 75%
-   
   }
 }
 
@@ -33,13 +30,13 @@ body {
 }
 
 main {
-  margin-top: 15rem;
-  // min-width: 100vw;
-  // min-height: 75vh;
-  padding-top: 8vh;
-  padding-bottom: 10rem;
-  overflow: hidden;
-  position: relative;
+  // margin-top: 6rem;
+  // // min-width: 100vw;
+  // // min-height: 75vh;
+  // padding-top: 8vh;
+  // padding-bottom: 10rem;
+  // overflow: hidden;
+  // position: relative;
 
   @include respond(tab-port) {
     margin-top: 17rem;
