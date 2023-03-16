@@ -1,10 +1,15 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background: #ffc20c;
+  background: #f9dc5c;
   align-items: center;
-
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 5;
+  box-shadow: 0 4px 8px rgba(241, 222, 136, 0.9);
   &__izquierda {
     display: flex;
     align-items: center;
@@ -17,6 +22,9 @@
 
     img {
       height: 10rem;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -28,18 +36,16 @@
     width: 20rem;
     height: 5rem;
     align-items: center;
-    border-radius: 30px;
-    background: #da2128;
-    // box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-    align-items: center;
   }
 
   &__link {
     text-decoration: none;
-    color: #ffffff;
+    color: #da2128;
     &:hover {
       transform: scale(1.02);
-      color: #dbdada;
+      color: white;
+      background-color: #da2128;
+      border-radius: 0.8rem;
     }
   }
 }

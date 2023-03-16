@@ -5,8 +5,11 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header__izquierda">
-        <img src="img/Romeo.jpg" alt="logo" />
-        {/* <h1>Romeo Chicken</h1> */}
+        <Link to="/home">
+          {/* <img src="img/Romeo.jpg" alt="logo" /> */}
+          <img src="img/Romeo2.png" alt="logo" />
+          {/* <h1>Romeo Chicken</h1> */}
+        </Link>
       </div>
       <div className="header__derecha">
         <Link to="/home" className="header__link">
