@@ -13,17 +13,47 @@
     width: 100%;
     height: 90vh;
     background-repeat: no-repeat;
-    border-radius: 0.5rem;
     overflow: hidden;
     background-position: center;
     background-size: cover;
     cursor: pointer;
-
-    &:hover {
-      transform: scale(1.02);
-    }
   }
-  &__slider {
+
+  &-slider {
     min-height: 34vh;
   }
+}
+
+.swiper-button {
+  &-prev {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white !important;
+    width: 2rem !important;
+    height: 6rem !important;
+    visibility: hidden;
+    &:hover {
+      color: #ffc20c !important;
+    }
+  }
+  &-next {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white !important;
+    width: 2rem !important;
+    height: 6rem !important;
+    visibility: hidden;
+    &:hover {
+      color: #ffc20c !important;
+    }
+  }
+}
+
+.swiper:hover {
+  .swiper-button-prev,
+  .swiper-button-next {
+    visibility: visible !important;
+  }
+}
+
+:root {
+  --swiper-navigation-size: 1rem !important;
 }

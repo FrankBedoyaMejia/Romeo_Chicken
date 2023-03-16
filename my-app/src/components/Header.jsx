@@ -5,17 +5,14 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header__izquierda">
-        <img src="img/Romeo2.png" alt="logo" />
-        <h1>Romeo Chicken</h1>
+        <img src="img/Romeo.jpg" alt="logo" />
+        {/* <h1>Romeo Chicken</h1> */}
       </div>
       <div className="header__derecha">
-        <Link to="/home" style={{ textDecoration: `none`, color: `black` }}>
+        <Link to="/home" className="header__link">
           Inicio
         </Link>
-        <Link
-          to="/sobreNosotros"
-          style={{ textDecoration: `none`, color: `black` }}
-        >
+        <Link to="/sobreNosotros" className="header__link">
           Sobre nosotros
         </Link>
       </div>

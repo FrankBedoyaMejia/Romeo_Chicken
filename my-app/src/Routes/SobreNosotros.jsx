@@ -1,7 +1,7 @@
 export const SobreNosotros = () => {
   return (
     <>
-      <h1>Pepito</h1>
+      <h1>Sobre nosotros</h1>
     </>
   );
 };
