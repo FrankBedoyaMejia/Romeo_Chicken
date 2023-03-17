@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f9dc5c;
+  background-image: url("/public/img/Romeofondo1.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
   align-items: center;
   width: 100%;
   left: 0;
@@ -10,6 +13,7 @@
   position: fixed;
   z-index: 5;
   box-shadow: 0 4px 8px rgba(241, 222, 136, 0.9);
+
   &__izquierda {
     display: flex;
     align-items: center;
@@ -22,6 +26,8 @@
 
     img {
       height: 10rem;
+      padding-left: 2rem;
+      border-radius: 1rem;
       &:hover {
         transform: scale(1.1);
         transition: ease-in 0.3s;
@@ -41,13 +47,13 @@
 
   &__link {
     text-decoration: none;
-    color: #da2128;
-    font-family: "Sono", sans-serif;
-    font-size: 1.5rem;
+    color: black;
+    font-family: "Comic Neue", cursive;
+    font-size: 2rem;
     padding: 1rem;
     &:hover {
       color: white;
-      background-color: #da2128;
+      background-color: #ffbf69;
       transition: background ease-in 0.4s;
       border-radius: 0.6rem;
     }

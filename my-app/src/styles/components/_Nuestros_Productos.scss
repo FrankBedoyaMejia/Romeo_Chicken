@@ -5,18 +5,18 @@
   font-family: "Anton", sans-serif;
   font-size: 3rem;
   &-productos {
-    display: grid;
-    gap: 2.7rem;
-    grid-auto-flow: dense;
-    grid-auto-rows: 20rem;
-    grid-template-columns: repeat(3, minmax(min(100%, 10rem), 1fr));
-    // padding: 1 1rem;
-    padding-left: 1rem;
-    margin: 5rem 0;
-    // display: flex;
-    // justify-content: space-between;
-    // height: 30rem;
-    // width: 100%;
-    // align-items: center;
+    // display: grid;
+    // gap: 2.7rem;
+    // grid-auto-flow: dense;
+    // grid-auto-rows: 20rem;
+    // grid-template-columns: repeat(3, minmax(min(100%, 10rem), 1fr));
+    // // padding: 1 1rem;
+    // padding-left: 1rem;
+    // margin: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    height: 30rem;
+    width: 100%;
+    align-items: center;
   }
 }

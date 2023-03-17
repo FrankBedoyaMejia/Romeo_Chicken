@@ -6,8 +6,8 @@ export const Header = () => {
     <header className="header">
       <div className="header__izquierda">
         <Link to="/home">
-          {/* <img src="img/Romeo.jpg" alt="logo" /> */}
-          <img src="img/Romeo2.png" alt="logo" />
+          <img src="img/Romeo4.jpg" alt="logo" />
+          {/* <img src="img/Romeo3.png" alt="logo" /> */}
           {/* <h1>Romeo Chicken</h1> */}
         </Link>
       </div>
