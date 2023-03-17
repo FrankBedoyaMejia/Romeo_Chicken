@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: #f9dc5c;
   align-items: center;
@@ -24,6 +24,7 @@
       height: 10rem;
       &:hover {
         transform: scale(1.1);
+        transition: ease-in 0.3s;
       }
     }
   }
@@ -33,7 +34,7 @@
     font-size: 1.7rem;
     display: flex;
     justify-content: space-around;
-    width: 20rem;
+    width: 35rem;
     height: 5rem;
     align-items: center;
   }
@@ -41,11 +42,14 @@
   &__link {
     text-decoration: none;
     color: #da2128;
+    font-family: "Sono", sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
     &:hover {
-      transform: scale(1.02);
       color: white;
       background-color: #da2128;
-      border-radius: 0.8rem;
+      transition: background ease-in 0.4s;
+      border-radius: 0.6rem;
     }
   }
 }

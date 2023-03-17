@@ -1,7 +1,9 @@
 .section {
   text-align: center;
-  color: white;
+  color: #da2128;
   margin-top: 3rem;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
   &-productos {
     display: grid;
     gap: 2.7rem;

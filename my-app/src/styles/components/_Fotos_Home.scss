@@ -33,7 +33,8 @@
     height: 6rem !important;
     visibility: hidden;
     &:hover {
-      color: #ffc20c !important;
+      color: #000000 !important;
+      transition: ease-in 0.3s;
     }
   }
   &-next {
@@ -43,7 +44,8 @@
     height: 6rem !important;
     visibility: hidden;
     &:hover {
-      color: #ffc20c !important;
+      color: #000000 !important;
+      transition: ease-in 0.3s;
     }
   }
 }
@@ -52,6 +54,7 @@
   .swiper-button-prev,
   .swiper-button-next {
     visibility: visible !important;
+    transition: ease-in 0.3s;
   }
 }
 

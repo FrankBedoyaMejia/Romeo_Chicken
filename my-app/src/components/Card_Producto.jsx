@@ -2,19 +2,6 @@ import React from "react";
 
 export const Card_Producto = ({ producto }) => {
   return (
-    // <div className="card">
-    //   <div
-    //     key={"card--img"}
-    //     className="card-img"
-    //   style={{
-    //     backgroundImage: `url(${producto?.url})`,
-    //   }}
-    // ></div>
-    //   <div className="card-information" key={"card--information--container"}>
-    //     <h2>{producto?.titulo}</h2>
-    //     <p>{producto?.descripcion}</p>
-    //   </div>
-    // </div>
     <div class="card">
       <div
         class="card-img"

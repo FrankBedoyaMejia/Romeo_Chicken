@@ -10,7 +10,7 @@ html {
   //This defines what one rem is (that's why it's more a global definition than font style related)
   // 1 rem= 10px; 10px/16px= 62.5%
   font-family: "Roboto", sans-serif;
-  background-color: #313131;
+  background-color: white;
   scroll-behavior: smooth;
 
   @include respond(tab-land) {

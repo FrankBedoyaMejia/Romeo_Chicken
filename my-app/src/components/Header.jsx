@@ -18,6 +18,9 @@ export const Header = () => {
         <Link to="/sobreNosotros" className="header__link">
           Sobre nosotros
         </Link>
+        <Link to="/sobreNosotros" className="header__link">
+          Productos
+        </Link>
       </div>
     </header>
   );
