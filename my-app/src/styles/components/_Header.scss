@@ -2,17 +2,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url("/public/img/Romeofondo1.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
+  // background-image: url("/public/img/Romeofondo1.jpg");
+  // background-position: center;
+  // background-size: contain;
+  // background-repeat: repeat;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 16%,
+    rgba(234, 190, 63, 1) 50%,
+    rgba(255, 255, 255, 1) 82%
+  );
   align-items: center;
   width: 100%;
   left: 0;
   top: 0;
   position: fixed;
   z-index: 5;
-  box-shadow: 0 4px 8px rgba(241, 222, 136, 0.9);
+  box-shadow: 0 1px 2px rgba(241, 222, 136, 0.9);
 
   &__izquierda {
     display: flex;
@@ -53,7 +60,7 @@
     padding: 1rem;
     &:hover {
       color: white;
-      background-color: #ffbf69;
+      background-color: #f79c25;
       transition: background ease-in 0.4s;
       border-radius: 0.6rem;
     }

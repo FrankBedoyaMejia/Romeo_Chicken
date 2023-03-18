@@ -2,41 +2,22 @@
   {
     "titulo": "Filetes",
     "cantidad": "Paquete por 10 porciones",
-    "precio": "22,400",
-    "gramaje": [
-      { "precio": "20,600", "titulo": "packx70gr" },
-      { "precio": "23,500 ", "titulo": "packx80gr" },
-      { "precio": "26,500 ", "titulo": "packx90gr" },
-      { "precio": "29,400 ", "titulo": "packx100gr" },
-      { "precio": "32,300 ", "titulo": "packx110gr" },
-      { "precio": "35,300 ", "titulo": "packx120gr" },
-      { "precio": "38,200 ", "titulo": "packx130gr" },
-      { "precio": "58,800 ", "titulo": "packx200gr" },
-      { "precio": "73,500 ", "titulo": "packx250gr" }
-    ],
     "descripcion": "Paquetes de filete de pechuga previamente empacados y separados segun gramaje de a 10 unidades",
+    "gramaje": "Packs desde 70gr a 250gr",
     "url": "https://cdn0.recetasgratis.net/es/posts/0/5/4/muslos_de_pollo_al_limon_56450_orig.jpg"
   },
   {
     "titulo": "Chuzos de lomito",
     "cantidad": "Bandeja de 10 ",
-    "precio": "22,400",
     "descripcion": "Pinchos de lomito de pechuga con un toque de adobo ",
-    "gramaje": [
-      { "precio": "44,500", "titulo": "packx200gr" },
-      { "precio": "29,400 ", "titulo": "packx100gr" }
-    ],
+    "gramaje": "Packs de 100gr y 200gr",
     "url": "https://www.deliciosi.com/images/1500/1586/contramuslos-de-pollo.jpg"
   },
   {
     "titulo": "Cordon Bleu",
     "cantidad": "Bandeja de 5 rollos x500gr",
-    "precio": "22,400",
+    "precio": "COP $22,400",
     "descripcion": "Rollos de Filetes de pechuga con jamon y queso envueltos en tocineta",
-    "gramaje": [
-      { "precio": "44,500", "titulo": "packx200gr" },
-      { "precio": "29,400 ", "titulo": "packx100gr" }
-    ],
     "url": "https://cdn0.recetasgratis.net/es/posts/0/5/4/muslos_de_pollo_al_limon_56450_orig.jpg"
   }
 ]
