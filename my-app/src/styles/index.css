@@ -9,7 +9,6 @@
 html {
   font-family: "Roboto", sans-serif;
   background-color: white;
-  scroll-behavior: smooth;
 }
 body {
   box-sizing: border-box;
@@ -39,7 +38,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 16%, rgb(234, 190, 63) 50%, rgb(255, 255, 255) 82%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(234, 190, 63) 50%, rgb(255, 255, 255) 82%);
   align-items: center;
   width: 100%;
   left: 0;
@@ -76,6 +75,7 @@ body {
   font-family: "Comic Neue", cursive;
   font-size: 2rem;
   padding: 1rem;
+  font-weight: bold;
 }
 .header__link:hover {
   color: white;
@@ -87,10 +87,14 @@ body {
 .footer {
   background-color: black;
   color: aliceblue;
+  margin-top: 2rem;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
 .productos {
-  margin-top: 12rem;
+  margin-top: 14rem;
   width: 80vw;
   margin-left: 11rem;
 }
@@ -150,14 +154,14 @@ body {
   --swiper-navigation-size: 1rem !important;
 }
 
-.section {
+.section_prductos {
   text-align: center;
-  color: #da2128;
+  color: #f79c25;
   margin-top: 3rem;
   font-family: "Anton", sans-serif;
   font-size: 3rem;
 }
-.section-productos {
+.section_prductos-productos {
   display: flex;
   justify-content: space-around;
   height: 30rem;
@@ -277,4 +281,20 @@ svg {
 .card-button:hover {
   border: 1px solid #f9dc5c;
   background-color: #f9dc5c;
+}
+
+.section_recetas {
+  text-align: center;
+  color: #f79c25;
+  margin-top: 3rem;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+}
+.section_recetas-contenedor {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.section_recetas-videos {
+  margin: 0 2rem;
 }/*# sourceMappingURL=index.css.map */

@@ -11,7 +11,7 @@ html {
   // 1 rem= 10px; 10px/16px= 62.5%
   font-family: "Roboto", sans-serif;
   background-color: white;
-  scroll-behavior: smooth;
+  
 
   @include respond(tab-land) {
     // 1rem= 9px; 9px/16px= 56.25%

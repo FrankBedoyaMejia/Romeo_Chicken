@@ -9,7 +9,7 @@
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 1) 16%,
+    rgba(255, 255, 255, 1) 10%,
     rgba(234, 190, 63, 1) 50%,
     rgba(255, 255, 255, 1) 82%
   );
@@ -58,6 +58,7 @@
     font-family: "Comic Neue", cursive;
     font-size: 2rem;
     padding: 1rem;
+    font-weight: bold;
     &:hover {
       color: white;
       background-color: #f79c25;
