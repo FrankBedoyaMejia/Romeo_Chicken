@@ -4,8 +4,8 @@ import { Card_Producto } from "./Card_Producto";
 
 export const Nuestros_Productos = () => {
   return (
-    <>
-      <h1 className="section_prductos">Productos mas Vendidos</h1>
+    <div className="section_prductos" id="section-1">
+      <h1 className="section_prductos-h1">Productos mas Vendidos</h1>
       <div className="section_prductos-productos">
         {productos
           ? productos.map((producto) => {
@@ -15,6 +15,6 @@ export const Nuestros_Productos = () => {
             })
           : null}
       </div>
-    </>
+    </div>
   );
 };

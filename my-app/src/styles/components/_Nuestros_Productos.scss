@@ -1,9 +1,13 @@
 .section_prductos {
-  text-align: center;
-  color: #f79c25;
   margin-top: 3rem;
-  font-family: "Anton", sans-serif;
-  font-size: 3rem;
+  background-color: rgb(211, 211, 211,0.3);
+
+  &-h1{
+    font-family: "Anton", sans-serif;
+    text-align: center;
+    color: #f79c25;
+    font-size: 3rem;
+  }
   &-productos {
     // display: grid;
     // gap: 2.7rem;

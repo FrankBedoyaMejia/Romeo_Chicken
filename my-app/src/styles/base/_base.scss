@@ -11,6 +11,7 @@ html {
   // 1 rem= 10px; 10px/16px= 62.5%
   font-family: "Roboto", sans-serif;
   background-color: white;
+  overflow:unset;
   
 
   @include respond(tab-land) {
