@@ -10,10 +10,11 @@
   }
   &-productos {
     display: grid;
-    gap: 1rem;
+    gap: 3.5rem;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(3, minmax(min(100%, 22rem), 1fr));
+    grid-template-columns: repeat(4, minmax(min(100%, 22rem), 1fr));
     justify-items: center;
-    margin-top: 0.4rem;
+    margin-top: 1rem;
+    padding-bottom: 5rem;
   }
 }

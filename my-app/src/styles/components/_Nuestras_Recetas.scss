@@ -1,21 +1,18 @@
 .section_recetas {
-    text-align: center;
-    color: #f79c25;
-    margin-top: 3rem;
-    font-family: "Anton", sans-serif;
-    font-size: 3rem;
+  text-align: center;
+  color: #f79c25;
+  margin-top: 3rem;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
 
-&-contenedor{
+  &-contenedor {
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-}
+    padding-bottom: 4rem;
+  }
 
-
-&-videos{
+  &-videos {
     margin: 0 2rem;
-
-}
-
-
+  }
 }

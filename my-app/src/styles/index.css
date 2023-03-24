@@ -9,11 +9,9 @@
 html {
   font-family: "Roboto", sans-serif;
   background-color: white;
-  overflow: unset;
 }
 body {
   box-sizing: border-box;
-  height: 100%;
 }
 
 @media (max-width: 56.25em) {
@@ -107,6 +105,8 @@ body {
   width: 100%;
   left: 0;
   bottom: 0;
+  position: fixed;
+  z-index: 10;
 }
 
 .productos {
@@ -182,11 +182,12 @@ body {
 }
 .section-productos {
   display: grid;
-  gap: 1rem;
+  gap: 3.5rem;
   grid-auto-flow: dense;
-  grid-template-columns: repeat(3, minmax(min(100%, 22rem), 1fr));
+  grid-template-columns: repeat(4, minmax(min(100%, 22rem), 1fr));
   justify-items: center;
-  margin-top: 0.4rem;
+  margin-top: 1rem;
+  padding-bottom: 5rem;
 }
 
 .card {
@@ -385,6 +386,7 @@ svg {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  padding-bottom: 4rem;
 }
 .section_recetas-videos {
   margin: 0 2rem;

@@ -31,18 +31,16 @@ export function Fotos_Home() {
       >
         {imagenes.map((imagen) => {
           return (
-            <>
-              <SwiperSlide
-                key={imagen.url + "swiper-home-page"}
-                className="productos-slider"
-              >
-                <div
-                  className="productos-img"
-                  key={imagen.title + imagen.url}
-                  style={{ backgroundImage: `url(${imagen?.url})` }}
-                ></div>
-              </SwiperSlide>
-            </>
+            <SwiperSlide
+              key={imagen.url + "swiper-home-page"}
+              className="productos-slider"
+            >
+              <div
+                className="productos-img"
+                key={imagen.title + imagen.url}
+                style={{ backgroundImage: `url(${imagen?.url})` }}
+              ></div>
+            </SwiperSlide>
           );
         })}
       </Swiper>
