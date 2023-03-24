@@ -22,7 +22,7 @@ export const Header = () => {
         >
           Sobre nosotros
         </NavLink>
-        <NavLink to="section-1" className="header__link">
+        <NavLink to="/productos" className="header__link">
           Productos
         </NavLink>
       </div>

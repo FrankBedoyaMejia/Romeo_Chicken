@@ -1,26 +1,19 @@
-.section_prductos {
-  margin-top: 3rem;
-  background-color: rgb(211, 211, 211,0.3);
+.section {
+  margin-top: 8rem;
+  height: 100vh;
 
-  &-h1{
+  &-h1 {
     font-family: "Anton", sans-serif;
     text-align: center;
     color: #f79c25;
     font-size: 3rem;
   }
   &-productos {
-    // display: grid;
-    // gap: 2.7rem;
-    // grid-auto-flow: dense;
-    // grid-auto-rows: 20rem;
-    // grid-template-columns: repeat(3, minmax(min(100%, 10rem), 1fr));
-    // // padding: 1 1rem;
-    // padding-left: 1rem;
-    // margin: 5rem 0;
-    display: flex;
-    justify-content: space-around;
-    height: 30rem;
-    width: 100%;
-    align-items: center;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, minmax(min(100%, 22rem), 1fr));
+    justify-items: center;
+    margin-top: 0.4rem;
   }
 }
