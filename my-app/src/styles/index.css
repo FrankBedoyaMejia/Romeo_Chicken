@@ -100,14 +100,23 @@ body {
 
 .footer {
   background-color: black;
-  color: white;
   margin-top: 2rem;
   width: 100%;
   left: 0;
   bottom: 0;
   position: fixed;
-  z-index: 10;
+  display: flex;
+  justify-content: space-between;
 }
+.footer-izquierda {
+  color: #f79c25;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+.footer-icono {
+  color: #00bb2d;
+}
+
 .productos {
   margin-top: 14rem;
   width: 80vw;
