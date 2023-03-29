@@ -10,8 +10,9 @@ export const Footer = () => {
           {/* <img src="/img/Romeo1.png" alt="Logo Romeo chicken" /> */}
           <span>Romeo Chicken</span>
         </div>
+        <span>2023 ©Romeo Chicken todos los derechos reservados</span>
         <div className="footer-derecha">
-          <a href="https://example.com" target="_blank">
+          <a href="https://example.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon
               icon={faWhatsapp}
               className="footer-icono"

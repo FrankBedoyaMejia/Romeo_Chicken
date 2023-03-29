@@ -97,9 +97,28 @@ body {
   transition: ease-in 0.4s;
   transform: scale(1.1);
 }
+.header-card_button {
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.header-card_button:hover {
+  transform: translateY(-10%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+.header-card_button:hover {
+  background-color: #f79c25;
+}
+.header svg {
+  width: 30px;
+  height: 30px;
+}
 
 .footer {
   background-color: black;
+  color: white;
   margin-top: 2rem;
   width: 100%;
   left: 0;
@@ -107,14 +126,20 @@ body {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .footer-izquierda {
   color: #f79c25;
   font-family: "Anton", sans-serif;
   text-align: center;
+  font-size: 1.5rem;
+}
+.footer-derecha {
+  align-items: center;
 }
 .footer-icono {
   color: #00bb2d;
+  margin-right: 2rem;
 }
 
 .productos {

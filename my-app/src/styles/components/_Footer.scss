@@ -1,6 +1,6 @@
 .footer {
   background-color: black;
- 
+ color: white;
   margin-top: 2rem;
   width: 100%;
   left: 0;
@@ -9,16 +9,19 @@
   // z-index: 10;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   &-izquierda {
     color: #f79c25;
     font-family: "Anton", sans-serif;
     text-align: center;
+    font-size:1.5rem ;
   }
   &-derecha {
-
+align-items: center;
   }
   &-icono {
     color:  #00bb2d;
+    margin-right: 2rem;
     
   }
 }

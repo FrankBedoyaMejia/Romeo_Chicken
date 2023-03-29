@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ContextGlobal } from "../utilities/globalContext";
 
 export const Card_Producto_home = ({ producto }) => {
+  const { carrito, setCarrito } = useContext(ContextGlobal);
+
+  const onClick = () => {};
+
   return (
     <article class="card">
       <div
