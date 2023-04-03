@@ -2,7 +2,14 @@ import React, { useContext, useEffect } from "react";
 import { ContextGlobal } from "../utilities/globalContext";
 
 export const Card_Producto_home = ({ producto }) => {
-  const { allProducts, setAllProducts } = useContext(ContextGlobal);
+  const {
+    allProducts,
+    setAllProducts,
+    total,
+    setTotal,
+    setCountProducts,
+    countProducts,
+  } = useContext(ContextGlobal);
 
   // const onClick = () => {
   //   setAllProducts([...allProducts, producto]);
@@ -14,8 +21,8 @@ export const Card_Producto_home = ({ producto }) => {
           ? { ...item, quantity: item.quantity + 1 }
           : item
       );
-      // setTotal(total + product.price * product.quantity);
-      // setCountProducts(countProducts + product.quantity);
+      setTotal(total + producto.precio * producto.quantity);
+      setCountProducts(countProducts + producto.quantity);
       return setAllProducts([...products]);
     }
 
@@ -23,6 +30,8 @@ export const Card_Producto_home = ({ producto }) => {
     // setCountProducts(countProducts + product.quantity);
     setAllProducts([...allProducts, producto]);
   };
+
+  console.log(total + producto.precio * producto.quantity);
 
   return (
     <article class="card">

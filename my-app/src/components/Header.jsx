@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ContextGlobal } from "../utilities/globalContext";
 
 export const Header = () => {
-  const { allProducts } = useContext(ContextGlobal);
+  const { allProducts, total } = useContext(ContextGlobal);
   const [active, setActive] = useState(false);
 
   return (
@@ -53,7 +53,7 @@ export const Header = () => {
                         {product.titulo}
                       </p>
                       <span className="precio-producto-carrito">
-                        {product?.precio}
+                        {product.precio}
                       </span>
                     </div>
                     <svg
@@ -77,7 +77,7 @@ export const Header = () => {
 
               <div className="cart-total">
                 <h3>Total:</h3>
-                <span className="total-pagar">total</span>
+                <span className="total-pagar">{total}</span>
               </div>
 
               <button className="btn-clear-all">Vaciar Carrito</button>
