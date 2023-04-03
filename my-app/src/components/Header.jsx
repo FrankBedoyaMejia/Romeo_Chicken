@@ -3,8 +3,29 @@ import { Link } from "react-router-dom";
 import { ContextGlobal } from "../utilities/globalContext";
 
 export const Header = () => {
-  const { allProducts, total } = useContext(ContextGlobal);
+  const {
+    allProducts,
+    total,
+    countProducts,
+    setCountProducts,
+    setAllProducts,
+    setTotal,
+  } = useContext(ContextGlobal);
   const [active, setActive] = useState(false);
+
+  const onDeleteProduct = (product) => {
+    const results = allProducts.filter((item) => item.id !== product.id);
+
+    setTotal(total - product.price * product.quantity);
+    setCountProducts(countProducts - product.quantity);
+    setAllProducts(results);
+  };
+
+  const onCleanCart = () => {
+    setAllProducts([]);
+    setTotal(0);
+    setCountProducts(0);
+  };
 
   return (
     <header className="header">
@@ -36,7 +57,7 @@ export const Header = () => {
           <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
           <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
         </svg>
-        <span className="header-card_numero">{allProducts.length}</span>
+        <span className="header-card_numero">{countProducts}</span>
         <div
           className={`container-cart-products ${active ? "" : "hidden-cart"}`}
         >
@@ -63,7 +84,7 @@ export const Header = () => {
                       strokeWidth="1.5"
                       stroke="currentColor"
                       className="icon-close"
-                      // onClick={() => onDeleteProduct(product)}
+                      onClick={() => onDeleteProduct(product)}
                     >
                       <path
                         strokeLinecap="round"
@@ -80,7 +101,9 @@ export const Header = () => {
                 <span className="total-pagar">{total}</span>
               </div>
 
-              <button className="btn-clear-all">Vaciar Carrito</button>
+              <button className="btn-clear-all" onClick={() => onCleanCart()}>
+                Vaciar Carrito
+              </button>
             </>
           ) : (
             <p className="cart-empty">El carrito está vacío</p>
