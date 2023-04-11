@@ -622,4 +622,40 @@ svg {
   height: 30rem;
   width: 100%;
   align-items: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  border: 1px solid rgb(0, 96, 151);
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translate(0, -50%);
+  z-index: 10;
+}
+.overlay__background {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  border: 2px solid #e1ae01;
+  outline: 1.5px solid #e1ae01;
+  outline-offset: 0.4rem;
+  z-index: 5;
+}
+.overlay__button {
+  align-items: center;
+  text-align: center;
+}
+.overlay h1 {
+  align-items: center;
+  text-align: center;
+}
+.overlay h2 {
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

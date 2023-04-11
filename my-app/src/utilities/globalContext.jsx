@@ -8,16 +8,15 @@ export const GlobalContext = ({ children }) => {
   const [total, setTotal] = useState(0);
   const [countProducts, setCountProducts] = useState(0);
   const [productAdd, setProductAdd] = useState({
-    id: undefined,
     nombre: "",
     precio: 0,
     cantidad: 0,
   });
 
   const onAddProduct = (producto) => {
-    if (allProducts.find((item) => item.id === producto.id)) {
+    if (allProducts.find((item) => item.nombre === producto.nombre)) {
       const products = allProducts.map((item) =>
-        item.id === producto.id
+        item.nombre === producto.nombre
           ? { ...item, quantity: item.quantity + 1 }
           : item
       );
