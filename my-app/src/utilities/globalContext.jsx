@@ -14,6 +14,23 @@ export const GlobalContext = ({ children }) => {
     cantidad: 0,
   });
 
+  const onAddProduct = (producto) => {
+    if (allProducts.find((item) => item.id === producto.id)) {
+      const products = allProducts.map((item) =>
+        item.id === producto.id
+          ? { ...item, quantity: item.quantity + 1 }
+          : item
+      );
+      setTotal(total + producto.precio * producto.quantity);
+      setCountProducts(countProducts + producto.quantity);
+      return setAllProducts([...products]);
+    }
+
+    setTotal(total + producto.precio * producto.quantity);
+    setCountProducts(countProducts + producto.quantity);
+    setAllProducts([...allProducts, producto]);
+  };
+
   return (
     <ContextGlobal.Provider
       value={{
@@ -25,6 +42,7 @@ export const GlobalContext = ({ children }) => {
         setCountProducts,
         productAdd,
         setProductAdd,
+        onAddProduct,
       }}
     >
       <div>{children}</div>
